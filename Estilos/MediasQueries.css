@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* Outras Media Queries*/
+/*Typical Device Breakpoints
+-----------(Width)----------
+Pequenas: 0 até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: +1200px
+----------------------------
+*/
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main::after{
+        content: "Parte de um site de Diogo Antonny";
+    }
+}
+@media screen and (max-width: 700px ) {
+    input#Ipassword, input#Iemail{
+        width: 75%;
+    }
+}
+@media screen and (min-width: 768px ) and (max-width: 992px){
+   body{
+    background-color: var(--cor1);
+   }
+   main{
+    display: flex;
+    width: 90%;
+    height: 405px;
+   }
+   section#SecImg{
+    background-image: url(../Imagens/Vagabond.jpeg);
+    background-position: center left;
+    height: 100%;
+    width: 50%;
+    display: block;
+}
+section#SecLog{
+    display: block;
+}
+p{
+    font-weight: 100;
+}
+span#PersonIcon, span#KeyIcon{
+    font-size: 40px;
+    margin-left: 10px;
+ }
+ input#Ipassword, input#Iemail{
+    width: 80%;
+ }
+}
+@media screen and (min-width: 992px){
+    body{
+     background-color: var(--cor1);
+    }
+    main{
+     display: flex;
+     flex-direction: row-reverse;
+     width: 90%;
+     max-width: 1000px;
+     height: 405px;
+    }
+    section#SecImg{
+     background-image: url(../Imagens/Vagabond.jpeg);
+     background-position: center left;
+     height: 100%;
+     background-size: cover;
+     width: 70%;
+     display: block;
+ }
+ section#SecLog{
+     display: block;
+ }
+ p{
+     font-weight: 100;
+ }
+ span#PersonIcon, span#KeyIcon{
+    font-size: 40px;
+    margin-left: 10px;
+ }
+ input#Ipassword, input#Iemail{
+    width: 85%;
+ }
+ }
